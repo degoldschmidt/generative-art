@@ -1,6 +1,7 @@
 
 <!DOCTYPE html><html class=''>
-<head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/cobra_winfrey/pen/OjgKOy" />
+<head>
+<link rel="stylesheet" type="text/css" href="css/twist.css" />
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
 <style class="cp-pen-styles">body {
@@ -10,615 +11,67 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  background: #000;
 }
 body .title {
     font-family: Raleway;
-	font-size: 28px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 100;
-}
-body .circle {
-  display: block;
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -115px;
-}
-body .circle.two {
-  margin-top: -170px;
-}
-body .circle.two .line {
-  -webkit-transform-origin: 50% 180px;
-          transform-origin: 50% 180px;
-}
-body .circle.two .line:before {
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-}
-body .circle.two .line:nth-of-type(1) {
-  -webkit-transform: rotate(9.23deg);
-          transform: rotate(9.23deg);
-}
-body .circle.two .line:nth-of-type(2) {
-  -webkit-transform: rotate(18.46deg);
-          transform: rotate(18.46deg);
-}
-body .circle.two .line:nth-of-type(3) {
-  -webkit-transform: rotate(27.69deg);
-          transform: rotate(27.69deg);
-}
-body .circle.two .line:nth-of-type(4) {
-  -webkit-transform: rotate(36.92deg);
-          transform: rotate(36.92deg);
-}
-body .circle.two .line:nth-of-type(5) {
-  -webkit-transform: rotate(46.15deg);
-          transform: rotate(46.15deg);
-}
-body .circle.two .line:nth-of-type(6) {
-  -webkit-transform: rotate(55.38deg);
-          transform: rotate(55.38deg);
-}
-body .circle.two .line:nth-of-type(7) {
-  -webkit-transform: rotate(64.61deg);
-          transform: rotate(64.61deg);
-}
-body .circle.two .line:nth-of-type(8) {
-  -webkit-transform: rotate(73.84deg);
-          transform: rotate(73.84deg);
-}
-body .circle.two .line:nth-of-type(9) {
-  -webkit-transform: rotate(83.07deg);
-          transform: rotate(83.07deg);
-}
-body .circle.two .line:nth-of-type(10) {
-  -webkit-transform: rotate(92.3deg);
-          transform: rotate(92.3deg);
-}
-body .circle.two .line:nth-of-type(11) {
-  -webkit-transform: rotate(101.53deg);
-          transform: rotate(101.53deg);
-}
-body .circle.two .line:nth-of-type(12) {
-  -webkit-transform: rotate(110.76deg);
-          transform: rotate(110.76deg);
-}
-body .circle.two .line:nth-of-type(13) {
-  -webkit-transform: rotate(119.99deg);
-          transform: rotate(119.99deg);
-}
-body .circle.two .line:nth-of-type(14) {
-  -webkit-transform: rotate(129.22deg);
-          transform: rotate(129.22deg);
-}
-body .circle.two .line:nth-of-type(15) {
-  -webkit-transform: rotate(138.45deg);
-          transform: rotate(138.45deg);
-}
-body .circle.two .line:nth-of-type(16) {
-  -webkit-transform: rotate(147.68deg);
-          transform: rotate(147.68deg);
-}
-body .circle.two .line:nth-of-type(17) {
-  -webkit-transform: rotate(156.91deg);
-          transform: rotate(156.91deg);
-}
-body .circle.two .line:nth-of-type(18) {
-  -webkit-transform: rotate(166.14deg);
-          transform: rotate(166.14deg);
-}
-body .circle.two .line:nth-of-type(19) {
-  -webkit-transform: rotate(175.37deg);
-          transform: rotate(175.37deg);
-}
-body .circle.two .line:nth-of-type(20) {
-  -webkit-transform: rotate(184.6deg);
-          transform: rotate(184.6deg);
-}
-body .circle.two .line:nth-of-type(21) {
-  -webkit-transform: rotate(193.83deg);
-          transform: rotate(193.83deg);
-}
-body .circle.two .line:nth-of-type(22) {
-  -webkit-transform: rotate(203.06deg);
-          transform: rotate(203.06deg);
-}
-body .circle.two .line:nth-of-type(23) {
-  -webkit-transform: rotate(212.29deg);
-          transform: rotate(212.29deg);
-}
-body .circle.two .line:nth-of-type(24) {
-  -webkit-transform: rotate(221.52deg);
-          transform: rotate(221.52deg);
-}
-body .circle.two .line:nth-of-type(25) {
-  -webkit-transform: rotate(230.75deg);
-          transform: rotate(230.75deg);
-}
-body .circle.two .line:nth-of-type(26) {
-  -webkit-transform: rotate(239.98deg);
-          transform: rotate(239.98deg);
-}
-body .circle.two .line:nth-of-type(27) {
-  -webkit-transform: rotate(249.21deg);
-          transform: rotate(249.21deg);
-}
-body .circle.two .line:nth-of-type(28) {
-  -webkit-transform: rotate(258.44deg);
-          transform: rotate(258.44deg);
-}
-body .circle.two .line:nth-of-type(29) {
-  -webkit-transform: rotate(267.67deg);
-          transform: rotate(267.67deg);
-}
-body .circle.two .line:nth-of-type(30) {
-  -webkit-transform: rotate(276.9deg);
-          transform: rotate(276.9deg);
-}
-body .circle.two .line:nth-of-type(31) {
-  -webkit-transform: rotate(286.13deg);
-          transform: rotate(286.13deg);
-}
-body .circle.two .line:nth-of-type(32) {
-  -webkit-transform: rotate(295.36deg);
-          transform: rotate(295.36deg);
-}
-body .circle.two .line:nth-of-type(33) {
-  -webkit-transform: rotate(304.59deg);
-          transform: rotate(304.59deg);
-}
-body .circle.two .line:nth-of-type(34) {
-  -webkit-transform: rotate(313.82deg);
-          transform: rotate(313.82deg);
-}
-body .circle.two .line:nth-of-type(35) {
-  -webkit-transform: rotate(323.05deg);
-          transform: rotate(323.05deg);
-}
-body .circle.two .line:nth-of-type(36) {
-  -webkit-transform: rotate(332.28deg);
-          transform: rotate(332.28deg);
-}
-body .circle.two .line:nth-of-type(37) {
-  -webkit-transform: rotate(341.51deg);
-          transform: rotate(341.51deg);
-}
-body .circle.two .line:nth-of-type(38) {
-  -webkit-transform: rotate(350.74deg);
-          transform: rotate(350.74deg);
-}
-body .circle.two .line:nth-of-type(39) {
-  -webkit-transform: rotate(359.97deg);
-          transform: rotate(359.97deg);
-}
-body .circle.two .line:nth-of-type(40) {
-  -webkit-transform: rotate(369.2deg);
-          transform: rotate(369.2deg);
-}
-body .circle.three {
-  margin-top: -230px;
-}
-body .circle.three .line {
-  -webkit-transform-origin: 50% 240px;
-          transform-origin: 50% 240px;
-}
-body .circle.three .line:before {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-body .circle.three .line:nth-of-type(1) {
-  -webkit-transform: rotate(6.101deg);
-          transform: rotate(6.101deg);
-}
-body .circle.three .line:nth-of-type(2) {
-  -webkit-transform: rotate(12.202deg);
-          transform: rotate(12.202deg);
-}
-body .circle.three .line:nth-of-type(3) {
-  -webkit-transform: rotate(18.303deg);
-          transform: rotate(18.303deg);
-}
-body .circle.three .line:nth-of-type(4) {
-  -webkit-transform: rotate(24.404deg);
-          transform: rotate(24.404deg);
-}
-body .circle.three .line:nth-of-type(5) {
-  -webkit-transform: rotate(30.505deg);
-          transform: rotate(30.505deg);
-}
-body .circle.three .line:nth-of-type(6) {
-  -webkit-transform: rotate(36.606deg);
-          transform: rotate(36.606deg);
-}
-body .circle.three .line:nth-of-type(7) {
-  -webkit-transform: rotate(42.707deg);
-          transform: rotate(42.707deg);
-}
-body .circle.three .line:nth-of-type(8) {
-  -webkit-transform: rotate(48.808deg);
-          transform: rotate(48.808deg);
-}
-body .circle.three .line:nth-of-type(9) {
-  -webkit-transform: rotate(54.909deg);
-          transform: rotate(54.909deg);
-}
-body .circle.three .line:nth-of-type(10) {
-  -webkit-transform: rotate(61.01deg);
-          transform: rotate(61.01deg);
-}
-body .circle.three .line:nth-of-type(11) {
-  -webkit-transform: rotate(67.111deg);
-          transform: rotate(67.111deg);
-}
-body .circle.three .line:nth-of-type(12) {
-  -webkit-transform: rotate(73.212deg);
-          transform: rotate(73.212deg);
-}
-body .circle.three .line:nth-of-type(13) {
-  -webkit-transform: rotate(79.313deg);
-          transform: rotate(79.313deg);
-}
-body .circle.three .line:nth-of-type(14) {
-  -webkit-transform: rotate(85.414deg);
-          transform: rotate(85.414deg);
-}
-body .circle.three .line:nth-of-type(15) {
-  -webkit-transform: rotate(91.515deg);
-          transform: rotate(91.515deg);
-}
-body .circle.three .line:nth-of-type(16) {
-  -webkit-transform: rotate(97.616deg);
-          transform: rotate(97.616deg);
-}
-body .circle.three .line:nth-of-type(17) {
-  -webkit-transform: rotate(103.717deg);
-          transform: rotate(103.717deg);
-}
-body .circle.three .line:nth-of-type(18) {
-  -webkit-transform: rotate(109.818deg);
-          transform: rotate(109.818deg);
-}
-body .circle.three .line:nth-of-type(19) {
-  -webkit-transform: rotate(115.919deg);
-          transform: rotate(115.919deg);
-}
-body .circle.three .line:nth-of-type(20) {
-  -webkit-transform: rotate(122.02deg);
-          transform: rotate(122.02deg);
-}
-body .circle.three .line:nth-of-type(21) {
-  -webkit-transform: rotate(128.121deg);
-          transform: rotate(128.121deg);
-}
-body .circle.three .line:nth-of-type(22) {
-  -webkit-transform: rotate(134.222deg);
-          transform: rotate(134.222deg);
-}
-body .circle.three .line:nth-of-type(23) {
-  -webkit-transform: rotate(140.323deg);
-          transform: rotate(140.323deg);
-}
-body .circle.three .line:nth-of-type(24) {
-  -webkit-transform: rotate(146.424deg);
-          transform: rotate(146.424deg);
-}
-body .circle.three .line:nth-of-type(25) {
-  -webkit-transform: rotate(152.525deg);
-          transform: rotate(152.525deg);
-}
-body .circle.three .line:nth-of-type(26) {
-  -webkit-transform: rotate(158.626deg);
-          transform: rotate(158.626deg);
-}
-body .circle.three .line:nth-of-type(27) {
-  -webkit-transform: rotate(164.727deg);
-          transform: rotate(164.727deg);
-}
-body .circle.three .line:nth-of-type(28) {
-  -webkit-transform: rotate(170.828deg);
-          transform: rotate(170.828deg);
-}
-body .circle.three .line:nth-of-type(29) {
-  -webkit-transform: rotate(176.929deg);
-          transform: rotate(176.929deg);
-}
-body .circle.three .line:nth-of-type(30) {
-  -webkit-transform: rotate(183.03deg);
-          transform: rotate(183.03deg);
-}
-body .circle.three .line:nth-of-type(31) {
-  -webkit-transform: rotate(189.131deg);
-          transform: rotate(189.131deg);
-}
-body .circle.three .line:nth-of-type(32) {
-  -webkit-transform: rotate(195.232deg);
-          transform: rotate(195.232deg);
-}
-body .circle.three .line:nth-of-type(33) {
-  -webkit-transform: rotate(201.333deg);
-          transform: rotate(201.333deg);
-}
-body .circle.three .line:nth-of-type(34) {
-  -webkit-transform: rotate(207.434deg);
-          transform: rotate(207.434deg);
-}
-body .circle.three .line:nth-of-type(35) {
-  -webkit-transform: rotate(213.535deg);
-          transform: rotate(213.535deg);
-}
-body .circle.three .line:nth-of-type(36) {
-  -webkit-transform: rotate(219.636deg);
-          transform: rotate(219.636deg);
-}
-body .circle.three .line:nth-of-type(37) {
-  -webkit-transform: rotate(225.737deg);
-          transform: rotate(225.737deg);
-}
-body .circle.three .line:nth-of-type(38) {
-  -webkit-transform: rotate(231.838deg);
-          transform: rotate(231.838deg);
-}
-body .circle.three .line:nth-of-type(39) {
-  -webkit-transform: rotate(237.939deg);
-          transform: rotate(237.939deg);
-}
-body .circle.three .line:nth-of-type(40) {
-  -webkit-transform: rotate(244.04deg);
-          transform: rotate(244.04deg);
-}
-body .circle.three .line:nth-of-type(41) {
-  -webkit-transform: rotate(250.141deg);
-          transform: rotate(250.141deg);
-}
-body .circle.three .line:nth-of-type(42) {
-  -webkit-transform: rotate(256.242deg);
-          transform: rotate(256.242deg);
-}
-body .circle.three .line:nth-of-type(43) {
-  -webkit-transform: rotate(262.343deg);
-          transform: rotate(262.343deg);
-}
-body .circle.three .line:nth-of-type(44) {
-  -webkit-transform: rotate(268.444deg);
-          transform: rotate(268.444deg);
-}
-body .circle.three .line:nth-of-type(45) {
-  -webkit-transform: rotate(274.545deg);
-          transform: rotate(274.545deg);
-}
-body .circle.three .line:nth-of-type(46) {
-  -webkit-transform: rotate(280.646deg);
-          transform: rotate(280.646deg);
-}
-body .circle.three .line:nth-of-type(47) {
-  -webkit-transform: rotate(286.747deg);
-          transform: rotate(286.747deg);
-}
-body .circle.three .line:nth-of-type(48) {
-  -webkit-transform: rotate(292.848deg);
-          transform: rotate(292.848deg);
-}
-body .circle.three .line:nth-of-type(49) {
-  -webkit-transform: rotate(298.949deg);
-          transform: rotate(298.949deg);
-}
-body .circle.three .line:nth-of-type(50) {
-  -webkit-transform: rotate(305.05deg);
-          transform: rotate(305.05deg);
-}
-body .circle.three .line:nth-of-type(51) {
-  -webkit-transform: rotate(311.151deg);
-          transform: rotate(311.151deg);
-}
-body .circle.three .line:nth-of-type(52) {
-  -webkit-transform: rotate(317.252deg);
-          transform: rotate(317.252deg);
-}
-body .circle.three .line:nth-of-type(53) {
-  -webkit-transform: rotate(323.353deg);
-          transform: rotate(323.353deg);
-}
-body .circle.three .line:nth-of-type(54) {
-  -webkit-transform: rotate(329.454deg);
-          transform: rotate(329.454deg);
-}
-body .circle.three .line:nth-of-type(55) {
-  -webkit-transform: rotate(335.555deg);
-          transform: rotate(335.555deg);
-}
-body .circle.three .line:nth-of-type(56) {
-  -webkit-transform: rotate(341.656deg);
-          transform: rotate(341.656deg);
-}
-body .circle.three .line:nth-of-type(57) {
-  -webkit-transform: rotate(347.757deg);
-          transform: rotate(347.757deg);
-}
-body .circle.three .line:nth-of-type(58) {
-  -webkit-transform: rotate(353.858deg);
-          transform: rotate(353.858deg);
-}
-body .circle.three .line:nth-of-type(59) {
-  -webkit-transform: rotate(359.959deg);
-          transform: rotate(359.959deg);
-}
-body .circle.three .line:nth-of-type(60) {
-  -webkit-transform: rotate(366.06deg);
-          transform: rotate(366.06deg);
-}
-body .circle .line {
-  height: 35px;
-  width: 7.5px;
-  position: absolute;
-  -webkit-transform-origin: 50% 125px;
-          transform-origin: 50% 125px;
-}
-body .circle .line:nth-of-type(1) {
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-body .circle .line:nth-of-type(2) {
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
-body .circle .line:nth-of-type(3) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-body .circle .line:nth-of-type(4) {
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
-}
-body .circle .line:nth-of-type(5) {
-  -webkit-transform: rotate(75deg);
-          transform: rotate(75deg);
-}
-body .circle .line:nth-of-type(6) {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-body .circle .line:nth-of-type(7) {
-  -webkit-transform: rotate(105deg);
-          transform: rotate(105deg);
-}
-body .circle .line:nth-of-type(8) {
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-}
-body .circle .line:nth-of-type(9) {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-body .circle .line:nth-of-type(10) {
-  -webkit-transform: rotate(150deg);
-          transform: rotate(150deg);
-}
-body .circle .line:nth-of-type(11) {
-  -webkit-transform: rotate(165deg);
-          transform: rotate(165deg);
-}
-body .circle .line:nth-of-type(12) {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-body .circle .line:nth-of-type(13) {
-  -webkit-transform: rotate(195deg);
-          transform: rotate(195deg);
-}
-body .circle .line:nth-of-type(14) {
-  -webkit-transform: rotate(210deg);
-          transform: rotate(210deg);
-}
-body .circle .line:nth-of-type(15) {
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
-}
-body .circle .line:nth-of-type(16) {
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
-}
-body .circle .line:nth-of-type(17) {
-  -webkit-transform: rotate(255deg);
-          transform: rotate(255deg);
-}
-body .circle .line:nth-of-type(18) {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-body .circle .line:nth-of-type(19) {
-  -webkit-transform: rotate(285deg);
-          transform: rotate(285deg);
-}
-body .circle .line:nth-of-type(20) {
-  -webkit-transform: rotate(300deg);
-          transform: rotate(300deg);
-}
-body .circle .line:nth-of-type(21) {
-  -webkit-transform: rotate(315deg);
-          transform: rotate(315deg);
-}
-body .circle .line:nth-of-type(22) {
-  -webkit-transform: rotate(330deg);
-          transform: rotate(330deg);
-}
-body .circle .line:nth-of-type(23) {
-  -webkit-transform: rotate(345deg);
-          transform: rotate(345deg);
-}
-body .circle .line:nth-of-type(24) {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-body .circle .line:nth-of-type(25) {
-  -webkit-transform: rotate(375deg);
-          transform: rotate(375deg);
-}
-body .circle .line:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  left: 0;
-  top: 0;
-  -webkit-animation: backnforth 3s ease-in-out infinite;
-          animation: backnforth 3s ease-in-out infinite;
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-}
-@-webkit-keyframes backnforth {
-  0% {
-    -webkit-transform: rotate(35deg) translateX(-20px);
-            transform: rotate(35deg) translateX(-20px);
-  }
-  25% {
-    -webkit-transform: rotate(-35deg) translateX(20px);
-            transform: rotate(-35deg) translateX(20px);
-  }
-  50% {
-    -webkit-transform: rotate(-35deg) translateX(20px);
-            transform: rotate(-35deg) translateX(20px);
-  }
-  75% {
-    -webkit-transform: rotate(35deg) translateX(-20px);
-            transform: rotate(35deg) translateX(-20px);
-  }
-  100% {
-    -webkit-transform: rotate(35deg) translateX(-20px);
-            transform: rotate(35deg) translateX(-20px);
-  }
-}
-@keyframes backnforth {
-  0% {
-    -webkit-transform: rotate(35deg) translateX(-20px);
-            transform: rotate(35deg) translateX(-20px);
-  }
-  25% {
-    -webkit-transform: rotate(-35deg) translateX(20px);
-            transform: rotate(-35deg) translateX(20px);
-  }
-  50% {
-    -webkit-transform: rotate(-35deg) translateX(20px);
-            transform: rotate(-35deg) translateX(20px);
-  }
-  75% {
-    -webkit-transform: rotate(35deg) translateX(-20px);
-            transform: rotate(35deg) translateX(-20px);
-  }
-  100% {
-    -webkit-transform: rotate(35deg) translateX(-20px);
-            transform: rotate(35deg) translateX(-20px);
-  }
+    margin: auto;
+    width: 90%;
+    height: 50%;
+}
+body .title p {
+    color: #ff2545;
+    font-size: 32px;
+    margin-bottom: 90px;
+}
+body .title .left {
+    float: left;
+    margin: -180px 0 0 0;
+}
+body .title .left h1 {
+    color: #ddd;
+    font-size: 28px;
+}
+body .title .left h2 {
+    color: #fff;
+    font-size: 56px;
+    padding: 50px -30px 0 0;
+
+}
+body .title .left h3 {
+    color: #fff;
+    margin: 50px 0 0 0;
+    font-size: 64px;
+}
+
+body .title .right {
+    float: right;
+}
+body .title .right h3 {
+    color: #ddd;
+    font-size: 32px;
+    padding: 35% 0 0 0;
+    padding-left: 150px;
+}
+body .title .right ul {
+    color: #45a2ff;
+    padding: 200px 0 0 -300px;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+body .title .right li {
+    padding-right: 0px;
+}
+body .title .right a {
+    color: #45a2ff;
 }
 </style></head><body>
-<div class='title'>
-    2017, Nov 3
-</div>
-
-
 <div class='circle one'>
   <div class='line'></div>
   <div class='line'></div>
@@ -750,5 +203,20 @@ body .circle .line:before {
   <div class='line'></div>
   <div class='line'></div>
 </div>
+<div class='title'>
+    <div class='left'>
+        <h1><img src="img/CF.png" style="width:50px;height:48px;"><br>students retreat<br> 2017</h1> <p>Nov 3<p> <h2>Science &amp<br>Creativity</h2><h3>generative art</h3>
+    </div>
 
+    <div class='right'>
+        <h3>demos</h3>
+        <ul>
+            <li><a href="http://degoldschmidt.github.io/random_walk.html"> random walk </a>
+            <li><a href="http://degoldschmidt.github.io/random_walk.html"> reaction-diffusion </a>
+            <li><a href="http://degoldschmidt.github.io/random_walk.html"> fractals </a>
+            <li><a href="http://degoldschmidt.github.io/random_walk.html"> chaos </a>
+            <li><a href="http://degoldschmidt.github.io/random_walk.html"> behavior </a>
+        </ul>
+    </div>
+</div>
 </body></html>
