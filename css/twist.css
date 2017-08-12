@@ -544,8 +544,8 @@ body .circle .line:before {
   background: #fff;
   left: 0;
   top: 0;
-  -webkit-animation: backnforth 3s infinite;
-          animation: backnforth 3s infinite;
+  -webkit-animation: backnforth 5s infinite;
+          animation: backnforth 5s infinite;
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
 }

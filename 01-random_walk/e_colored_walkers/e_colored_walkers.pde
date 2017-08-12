@@ -17,7 +17,7 @@ void setup () {
   background(0);
   x0 = width/2;
   y0 = height/2;
-  int num_walkers = 10000;
+  int num_walkers = 1000;
   for (int i=0; i<num_walkers; i++) {
     walkers.add(new RandomWalker(x0, y0));
   }
