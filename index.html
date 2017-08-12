@@ -12,6 +12,11 @@
   position: relative;
   background: #000;
 }
+span{
+    display:inline-block;
+    border-bottom:5px solid white;
+    padding-bottom:5px;
+}
 body .title {
     font-family: Raleway;
 	font-style: normal;
@@ -44,7 +49,6 @@ body .title .left h3 {
     color: #fff;
     margin: 50px 0 0 0;
     font-size: 64px;
-    text-decoration: underline;
 }
 
 body .title .right {
@@ -70,6 +74,10 @@ body .title .right li {
 }
 body .title .right a {
     color: #45a2ff;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
 }
 </style></head><body>
 <div class='circle one'>
@@ -205,17 +213,17 @@ body .title .right a {
 </div>
 <div class='title'>
     <div class='left'>
-        <h1><img src="img/CF.png" style="width:50px;height:48px;"><br>students retreat<br> 2017</h1> <p>Nov 3<p> <h2>Science &amp<br>Creativity</h2><h3>generative art</h3>
+        <h1><img src="img/CF.png" style="width:50px;height:48px;"><br>students retreat<br> 2017</h1> <p>Nov 3<p> <h2>Science &amp<br>Creativity</h2><span><h3>generative art</h3></span>
     </div>
 
     <div class='right'>
         <h3>demos</h3>
         <ul>
             <li><a href="http://degoldschmidt.github.io/generative-art/random.html"> random walk </a>
-            <li><a href="http://degoldschmidt.github.io/generative-art/TODO.html" style="text-decoration:line-through;"> reaction-diffusion </a>
-            <li><a href="http://degoldschmidt.github.io/generative-art/TODO.html" style="text-decoration:line-through;"> fractals </a>
-            <li><a href="http://degoldschmidt.github.io/generative-art/TODO.html" style="text-decoration:line-through;"> chaos </a>
-            <li><a href="http://degoldschmidt.github.io/generative-art/TODO.html" style="text-decoration:line-through;"> collective behavior </a>
+            <li><a href="" class="not-active" style="text-decoration:line-through;"> reaction-diffusion </a>
+            <li><a href="" class="not-active" style="text-decoration:line-through;"> fractals </a>
+            <li><a href="" class="not-active" style="text-decoration:line-through;"> chaos </a>
+            <li><a href="" class="not-active" style="text-decoration:line-through;"> collective behavior </a>
         </ul>
     </div>
 </div>
