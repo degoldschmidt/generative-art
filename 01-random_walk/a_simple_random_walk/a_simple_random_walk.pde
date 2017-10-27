@@ -10,14 +10,13 @@ import processing.opengl.*;
 
 GifMaker gifExport;
 int frames = 0;
-int totalFrames = 400;
+int totalFrames = 300;
 float x, y, xold, yold;
 int choice;
 int step = 20;
 
 void setup () {
   size(800, 800, OPENGL);
-  frameRate(60);
   background(255, 152, 64);
   x = width/2;
   y = height/2;
@@ -30,7 +29,7 @@ void draw () {
   xold = x;
   yold = y;
   stroke(255); // white stroke
-  strokeWeight(1);
+  strokeWeight(2);
   //point(x, y) // point at position x,y
   
   choice = int(random(4)); // random choice of 0,1,2,3
