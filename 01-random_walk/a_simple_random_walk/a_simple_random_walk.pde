@@ -10,18 +10,19 @@ import processing.opengl.*;
 
 GifMaker gifExport;
 int frames = 0;
-int totalFrames = 300;
+int totalFrames = 100;
 float x, y, xold, yold;
 int choice;
-int step = 20;
+int step = 10;
 
 void setup () {
-  size(800, 800, OPENGL);
+  size(800, 800);
   background(255, 152, 64);
+  frameRate(60);
   x = width/2;
   y = height/2;
   
-  gifExport = new GifMaker(this, "export.gif", 100);
+  gifExport = new GifMaker(this, "export.gif");
   gifExport.setRepeat(0); // make it an "endless" animation
 }
 
