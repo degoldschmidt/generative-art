@@ -1,6 +1,6 @@
 Flock flock;
 
-int number_of_boids = 1000;
+int number_of_boids = 100;
 
 void setup() {
   size(800, 800);

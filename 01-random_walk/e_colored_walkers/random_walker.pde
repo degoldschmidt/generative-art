@@ -2,7 +2,7 @@
 
 class RandomWalker{
   float x, y, xold, yold, rad;
-  float angle= -PI/2;//random(TWO_PI);
+  float angle= random(TWO_PI);//-3*PI/2;//
   float turning_rate = 0.01*TWO_PI;
   float step = 0.5;
   color col = color(random(255), 50+random(100), 255);
