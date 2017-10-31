@@ -12,12 +12,12 @@ void setup () {
   size(200, 200);
   
   // RGB example
-  drawRGB();
-  fill(90,90,0,100); //transparency
-  rect(0,0,200,200);
+  //drawRGB();
+  //fill(90,90,0,160); //transparency
+  //rect(0,0,200,200);
   
   //lerp example
-  //drawLerp();
+  drawLerp();
 }
 
 

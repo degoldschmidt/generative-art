@@ -2,13 +2,13 @@
 // author: dennis goldschmidt
 // date: 29 Oct 2017
 // ---
-// Create animated shapes (rotating)
+// Create animated shapes
 // 1) draw circle
-// 2) geometry of movement
+// 2) move shape
 // 3) draw function (setup vs. draw)
 // ---
 
-float x, y, angle;
+float x, x0, y0, d;
 
 void setup () {
   size(400, 400);
@@ -16,30 +16,35 @@ void setup () {
   frameRate(60);
   
   // center point
-  //fill(0);
-  //ellipse(width/2, height/2, 10, 10);
+  x0 = width/2;
+  y0 = height/2;
+  d = 20;
+  fill(0);
+  ellipse(x0, y0, d/4, d/4);
   
+  /*
   // just static
-  //x = width/2 + 100;
-  //y = height/2;
-  //ellipse(x, y, 50, 50);
+  x = x0 + 20;
+  ellipse(x, y0, d, d);
   
   //// next step
-  //x = width/2 + 100*cos(radians(30));
-  //y = height/2 + 100*sin(radians(30));
-  //ellipse(x, y, 50, 50);
+  x += 20;
+  ellipse(x, y0, d, d);
   
-  //// next step
-  //x = width/2 + 100*cos(radians(60));
-  //y = height/2 + 100*sin(radians(60));
-  //ellipse(x, y, 50, 50);
+  //// next steps
+  for (int i=0;i<3;i++){
+    x += 20;
+    ellipse(x, y0, d, d);
+  }
+  */
 }
 
+/*
 void draw () {
   background(255);
-  angle += 2.5;
-  x = width/2 + 100*cos(radians(angle));
-  y = height/2 + 100*sin(radians(angle));
   fill(0);
-  ellipse(x, y, 50, 50);
-}
+  ellipse(width/2, height/2, d/4, d/4);
+  x += 5;
+  if(x>width-d/2) x=d/2;
+  ellipse(x, y0, 50, 50);
+}*/

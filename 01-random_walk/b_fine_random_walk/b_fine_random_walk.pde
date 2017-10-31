@@ -20,7 +20,7 @@ void draw () {
   yold = y;
   stroke(255); // white stroke
   
-  angle = random(0,TWO_PI); // random angle [0,2*pi]
+  angle = random(TWO_PI); // random angle [0,2*pi]
   x += step*cos(angle);
   y += step*sin(angle);
   line(xold,yold, x, y); // at position x,y
